@@ -1,0 +1,675 @@
+{
+	"info": {
+		"_postman_id": "b901e0f6-3911-49cb-9e9f-ae7838a871f7",
+		"name": "activitybookingapp.onrender.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41096368"
+	},
+	"item": [
+		{
+			"name": "/api",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MWNiMWQ3YzkwODg2ZDI2ZjY1NDQwMSIsImVtYWlsIjoiZGVtbzFAZ21haWwuY29tIiwiaWF0IjoxNzQ2NzExMTExLCJleHAiOjE3NDY3MTQ3MTF9.cQ-NlnOmb_hhfzxv_0lmVaxpTU4wwonk3pvT2dn-dqE",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://activitybookingapp.onrender.com/api",
+					"protocol": "https",
+					"host": [
+						"activitybookingapp",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/signUp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MWNiMWQ3YzkwODg2ZDI2ZjY1NDQwMSIsImVtYWlsIjoiZGVtbzFAZ21haWwuY29tIiwiaWF0IjoxNzQ2NzExMTExLCJleHAiOjE3NDY3MTQ3MTF9.cQ-NlnOmb_hhfzxv_0lmVaxpTU4wwonk3pvT2dn-dqE",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "demo1@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Demo_User1",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Cricket Tournament",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "Friendly match at the stadium",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "dateTime",
+							"value": "2024-06-10T15:00:00Z",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "location",
+							"value": "{\n    address: \"Nehru Stadium, Sector 5\",\n    \"city\": \"Pune\",\n    \"state\": \"Maharashtra\",\n    \"pincode\": \"411001\"\n  }",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "activity",
+							"value": "681cef8e8a413b189daa750b",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://activitybookingapp.onrender.com/api/signUp",
+					"protocol": "https",
+					"host": [
+						"activitybookingapp",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"signUp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/signIn",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "demo",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "demo@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "title",
+							"value": "demo title",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "demo description",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "dueDate",
+							"value": "2025-04-25T17:57:57.889+00:00",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "assignedTo",
+							"value": "680f4a77afeb4cd84df85360",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "api/getUser/:id",
+					"host": [
+						"api"
+					],
+					"path": [
+						"getUser",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/isAuthenticated",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "demo",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "demo@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "title",
+							"value": "demo title",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "demo description",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "dueDate",
+							"value": "2025-04-25T17:57:57.889+00:00",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "assignedTo",
+							"value": "680f4a77afeb4cd84df85360",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "api/isAuthenticated",
+					"host": [
+						"api"
+					],
+					"path": [
+						"isAuthenticated"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/activityBooking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MWNiMWQ3YzkwODg2ZDI2ZjY1NDQwMSIsImVtYWlsIjoiZGVtbzFAZ21haWwuY29tIiwiaWF0IjoxNzQ2NzExMTExLCJleHAiOjE3NDY3MTQ3MTF9.cQ-NlnOmb_hhfzxv_0lmVaxpTU4wwonk3pvT2dn-dqE",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Football Match\",\r\n  \"description\": \"evening match\",\r\n  \"dateTime\": \"2024-06-01T19:00:00Z\",\r\n  \"location\": {\r\n    \"address\": \"Sector 39 Ground\",\r\n    \"city\": \"Delhi\",\r\n    \"state\": \"Delhi\",\r\n    \"pincode\": \"110001\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://activitybookingapp.onrender.com/api/activityBooking",
+					"protocol": "https",
+					"host": [
+						"activitybookingapp",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"activityBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/getUser/:id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "demo",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "demo@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "title",
+							"value": "demo title",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "demo description",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "dueDate",
+							"value": "2025-04-25T17:57:57.889+00:00",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "assignedTo",
+							"value": "680f4a77afeb4cd84df85360",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "api/getUser/:id",
+					"host": [
+						"api"
+					],
+					"path": [
+						"getUser",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/activities",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MWNiMWQ3YzkwODg2ZDI2ZjY1NDQwMSIsImVtYWlsIjoiZGVtbzFAZ21haWwuY29tIiwiaWF0IjoxNzQ2NzExMTExLCJleHAiOjE3NDY3MTQ3MTF9.cQ-NlnOmb_hhfzxv_0lmVaxpTU4wwonk3pvT2dn-dqE",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://activitybookingapp.onrender.com/api/activities",
+					"protocol": "https",
+					"host": [
+						"activitybookingapp",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"activities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/Activity/:id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "demo",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "demo@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "title",
+							"value": "demo title",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "demo description",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "dueDate",
+							"value": "2025-04-25T17:57:57.889+00:00",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "assignedTo",
+							"value": "680f4a77afeb4cd84df85360",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "api/Activity/:id",
+					"host": [
+						"api"
+					],
+					"path": [
+						"Activity",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/deleteActivity/:id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "demo",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "demo@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "title",
+							"value": "demo title",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "demo description",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "dueDate",
+							"value": "2025-04-25T17:57:57.889+00:00",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "assignedTo",
+							"value": "680f4a77afeb4cd84df85360",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "api/",
+					"host": [
+						"api"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/activityBooking",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "demo",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "demo@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "title",
+							"value": "demo title",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "demo description",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "dueDate",
+							"value": "2025-04-25T17:57:57.889+00:00",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "assignedTo",
+							"value": "680f4a77afeb4cd84df85360",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "api/",
+					"host": [
+						"api"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/updateActivity/:id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "demo",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "demo@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "title",
+							"value": "demo title",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "demo description",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "dueDate",
+							"value": "2025-04-25T17:57:57.889+00:00",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "assignedTo",
+							"value": "680f4a77afeb4cd84df85360",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "api/",
+					"host": [
+						"api"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
