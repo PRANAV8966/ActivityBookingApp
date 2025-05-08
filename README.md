@@ -29,7 +29,8 @@ Before running the project, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/PRANAV8966/ActivityBookingApp.git
+
 cd activitybookingapp
 
 2. Install Dependencies

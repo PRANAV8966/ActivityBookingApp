@@ -43,7 +43,7 @@ const findAll = async (req, res) => {
 
 const deleteActivity = async (req, res) => {
     try {
-        await activityController.delete(req.body);
+        await activityController.delete(req.params.id);
         return res.status(StatusCodes.OK).json({
             success:true,
             message: 'deleted activity',

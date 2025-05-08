@@ -20,9 +20,9 @@ class ActivityService {
         }
     }
 
-    async delete(data) {
+    async delete(id) {
         try {
-            await this.activityService.delete(data.taskId);
+            await this.activityService.delete(id);
             return true;
         } catch (error) {
             throw error;
